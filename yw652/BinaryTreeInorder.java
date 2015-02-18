@@ -1,5 +1,6 @@
 package yw652;
 
+// Applying iteration over the tree instead of recursion
 
 /**
  * Definition for binary tree
