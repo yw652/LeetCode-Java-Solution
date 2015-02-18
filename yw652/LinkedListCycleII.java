@@ -12,6 +12,11 @@ package yw652;
  *         next = null;
  *     }
  * }
+ * 
+ * Below is an algorithm that utilizes 3 pointers in total; 
+ * More efficiently, one could use only slow and fast pointers: 
+ * When slow and fast meet, set the fast to the beginning of the list and start moving at 1 node at a time
+ * until it meets slow again, at where is the begin of the cycle
  */
 public class LinkedListCycleII {
     public ListNode detectCycle(ListNode head) {
