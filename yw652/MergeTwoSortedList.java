@@ -34,13 +34,18 @@ public class MergeTwoSortedList {
             //Advance the pointer for p so that the next call p.next is empty for the next node
             p = p.next;
         }
-            
+        
+        //When one of the list becomes empty and the other is not
+        //Add the rest of the list to the end of the combined sorted list (No need to traverse the rest of the list one by one)
+        
         while(curr1 != null){
+            //p.next = curr1;
             p.next = curr1;
             curr1 = curr1.next;
             p = p.next;
         }
         while (curr2 != null){
+            //p.next = curr2;
             p.next = curr2;
             curr2 = curr2.next;
             p = p.next;
